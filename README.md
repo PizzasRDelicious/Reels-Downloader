@@ -22,6 +22,12 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
+Run the downloader script:
+
+```
+python .\main_gui.py
+```
+
 Usage
 Prepare your input file (.csv) with the following columns (case sensitive):
 
@@ -30,15 +36,13 @@ Name, Reel Url,	Downloaded,	Uploaded
 Reel_Name1, https://instagram.com/...	,
 Reel_Name2, https://instagram.com/...	, True
 ```
+<<<<<<< HEAD
 
 The "Downloaded" column should be empty or set to anything other than "True" to download.
+=======
+The "Downloaded" column determines if it had been downloaded before. If you want to add new download, just leave it blank
+>>>>>>> 6610f4bdeacdedc9121137706f2dde793a25dbf8
 
-The "Uploaded" column is not used by the downloader but can be maintained for your own purposes.
-
-Run the downloader script:
-
-```
-python main.py input_file.csv
-```
+The "Uploaded" column is not used by the downloader yet
 
 Downloaded reels will be shown in the 'downloads' folder
