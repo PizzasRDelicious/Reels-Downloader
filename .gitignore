@@ -1,0 +1,20 @@
+# Python bytecode files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+venv/
+
+# OS / Editor specific files
+.DS_Store
+Thumbs.db
+
+# Downloads folder (optional - if it's output-only)
+downloads/
+
+# Jupyter Notebooks checkpoints (if any)
+.ipynb_checkpoints/
+
+# VSCode or other IDE settings (optional)
+.vscode/
