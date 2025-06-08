@@ -36,5 +36,7 @@ The "Uploaded" column is not used by the downloader but can be maintained for yo
 Run the downloader script:
 
 ```
-python main.py path/to/your/input_file.csv
+python main.py input_file.csv
 ```
+
+Downloaded reels will be shown in the 'downloads' folder
