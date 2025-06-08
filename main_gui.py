@@ -11,6 +11,7 @@ import subprocess
 import platform
 
 
+# Function for open downloads folder button
 def open_downloads_folder():
     path = os.path.abspath("downloads")
     os.makedirs(path, exist_ok=True)
@@ -26,9 +27,16 @@ def open_downloads_folder():
         messagebox.showerror("Error", f"Could not open folder: {e}")
 
 
+# Function to open provided file path in excel.
 def open_file_in_excel(file_path):
     if not os.path.isfile(file_path):
         messagebox.showerror("Error", "File not found!")
+        return
+
+    # Check for valid extension
+    ext = os.path.splitext(file_path)[1].lower()
+    if ext not in [".csv", ".xlsx"]:
+        messagebox.showwarning("Invalid File", "Please select a .csv or .xlsx file.")
         return
 
     try:
@@ -42,6 +50,7 @@ def open_file_in_excel(file_path):
         messagebox.showerror("Error", f"Could not open file: {e}")
 
 
+# Functions that downloads the url into a file
 def process_file(file_path, output_dir="downloads", status_label=None):
     os.makedirs(output_dir, exist_ok=True)
     df, file_type = load_dataframe(file_path)
@@ -76,6 +85,7 @@ def process_file(file_path, output_dir="downloads", status_label=None):
     messagebox.showinfo("Done", msg)
 
 
+# Function for Start Downlaod button
 def start_download(filepath, status_label):
     if not filepath:
         messagebox.showwarning("Missing File", "Please select a file first.")
@@ -90,7 +100,7 @@ def launch_gui():
     root.title("Instagram Reel Downloader")
     root.geometry("500x300")
 
-    selected_file = tk.StringVar()
+    selected_file = tk.StringVar(value=os.path.abspath("input.csv"))
 
     def browse_file():
         path = filedialog.askopenfilename(
