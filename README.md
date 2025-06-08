@@ -23,11 +23,10 @@ pip install -r requirements.txt
 ```
 
 Usage
-Prepare your input file (.csv or .xlsx) with the following columns (case sensitive):
+Prepare your input file (.csv) with the following columns (case sensitive):
 
 ```
-Name	Reel Url	Downloaded	Uploaded
-
+Name, Reel Url,	Downloaded,	Uploaded
 Reel_Name1, https://instagram.com/...	, 
 Reel_Name2, https://instagram.com/...	, True	
 ```
