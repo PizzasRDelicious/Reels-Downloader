@@ -121,7 +121,7 @@ def launch_gui():
         command=lambda: start_download(selected_file.get(), status_label),
         bg="#4CAF50",
         fg="white",
-    ).pack()
+    ).pack(pady=5)
 
     tk.Button(root, text="View Downloads Folder", command=open_downloads_folder).pack(
         pady=2
