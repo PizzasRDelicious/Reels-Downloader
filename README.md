@@ -22,12 +22,13 @@
    python --version
    ```
 
-- **On macOS/Linux:**
-  ```
-  python3 --version
-  ```
+   - **On macOS/Linux:**
 
-2. Create and activate a virtual environment:
+   ```
+   python3 --version
+   ```
+
+3. Create and activate a virtual environment:
 
    - **On Windows:**
 
@@ -42,29 +43,27 @@
      source venv/bin/activate
      ```
 
-3. Install the required dependencies:
+4. Install the required dependencies:
 
    ```
    pip install -r requirements.txt
    ```
 
-4. Running the script
+5. Running the script
 
    - **On Windows:**
 
    ```
    python main_gui.py
-
    ```
 
    - **On macOS/Linux:**
 
      ```
      python3 main_gui.py
-
      ```
 
-Prepare your input CSV file with the following columns (case sensitive):
+## EHH can kinda ingore this part: Prepare your input CSV file with the following columns (case sensitive):
 
 ```
 Name, Reel Url, Downloaded, Uploaded
