@@ -59,9 +59,9 @@
 
    - **On macOS/Linux:**
 
-     ```
-     python3 main_gui.py
-     ```
+   ```
+   python3 main_gui.py
+   ```
 
 ## EHH can kinda ingore this part: Prepare your input CSV file with the following columns (case sensitive):
 
