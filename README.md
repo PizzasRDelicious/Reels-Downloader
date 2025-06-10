@@ -14,13 +14,13 @@
    git clone https://github.com/PizzasRDelicious/Reels-Downloader.git
    ```
 
-1a. Check if you have python installed.
+2. Check if you have python installed.
 
-    - **On Windows:**
+   - **On Windows:**
 
-     ```
-     python --version
-     ```
+   ```
+   python --version
+   ```
 
 - **On macOS/Linux:**
   ```
