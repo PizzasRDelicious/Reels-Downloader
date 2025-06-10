@@ -10,6 +10,23 @@
 
 1. Clone the repository or download the source code.
 
+   ```
+   git clone https://github.com/PizzasRDelicious/Reels-Downloader.git
+   ```
+
+1a. Check if you have python installed.
+
+    - **On Windows:**
+
+     ```
+     python --version
+     ```
+
+- **On macOS/Linux:**
+  ```
+  python3 --version
+  ```
+
 2. Create and activate a virtual environment:
 
    - **On Windows:**
